@@ -1,5 +1,5 @@
 
-const { When, Then, setWorldConstructor } = require('cucumber');
+const { When, Then, setWorldConstructor, After } = require('cucumber');
 const webdriverio = require('webdriverio');
 
 const options = {
@@ -19,6 +19,10 @@ When('I navigate to google.com', function () {
 });
 
 Then('I should be on the page google.com', function () {
+
+});
+
+After(function () {
   this.driver.end();
 });
 
