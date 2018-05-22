@@ -1,5 +1,5 @@
 
-const { When, Then } = require('cucumber');
+const { When, Then, setWorldConstructor } = require('cucumber');
 const webdriverio = require('webdriverio');
 
 const options = {
@@ -8,13 +8,17 @@ const options = {
   }
 };
 
-When('I navigate to google.com', function (done) {
-  const driver = webdriverio.remote(options).init().call(done);
-  driver.end();
+function CustomWorld () {
+  this.driver = webdriverio.remote(options).init();
+}
+
+setWorldConstructor(CustomWorld);
+
+When('I navigate to google.com', function () {
+
 });
 
 Then('I should be on the page google.com', function () {
-  // Write code here that turns the phrase above into concrete actions
-  return 'pending';
+  this.driver.end();
 });
 
