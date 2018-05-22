@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cucumber": "^4.2.1",
+    "selenium-standalone": "^6.14.1",
     "webdriverio": "^4.12.0"
   }
 }
