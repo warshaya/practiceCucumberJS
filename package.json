@@ -1,0 +1,11 @@
+{
+  "name": "practicecucumberjs",
+  "version": "1.0.0",
+  "description": "sets up cucumber using node",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Aaron Warshay",
+  "license": "ISC"
+}
