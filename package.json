@@ -7,5 +7,8 @@
     "test": "test"
   },
   "author": "Aaron Warshay",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cucumber": "^4.2.1"
+  }
 }
