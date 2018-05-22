@@ -9,6 +9,7 @@
   "author": "Aaron Warshay",
   "license": "ISC",
   "dependencies": {
-    "cucumber": "^4.2.1"
+    "cucumber": "^4.2.1",
+    "webdriverio": "^4.12.0"
   }
 }
