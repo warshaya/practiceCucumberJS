@@ -8,6 +8,6 @@ first start the selenium server:
 then run all feature files:
 
 ```
-> .\node_modules\.bin\cucumber-js
+> .\node_modules\.bin\cucumber-js --require-module babel-core\register
 ```
 
