@@ -23,10 +23,12 @@ When('I navigate to google.com', function () {
 
 });
 
-Then('I should be on the page google.com', function () {
+Then('I should be on the page google.com', {timeout: 10 * 1000}, function () {
 
   return this.googlepage.getUrl().then(function (result) {
     expect(result).to.equal('https://www.google.com/');
+  }).catch(function (e) {
+    throw e.message;
   });
 
 });
